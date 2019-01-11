@@ -28,7 +28,7 @@ class PoliciesActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.policies_recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
-        recyclerView.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
+        recyclerView.addItemDecoration(DividerItemDecoration(this,0))
         recyclerView.adapter = adapter
         modelList = mutableListOf<PoliciesVm>()
         setPoliciesItem()

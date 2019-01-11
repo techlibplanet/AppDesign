@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import appdesign.example.com.appdesign.R
 import appdesign.example.com.appdesign.policies.PoliciesActivity
+import appdesign.example.com.appdesign.profile.ProfileActivity
 import appdesign.example.com.appdesign.settings.SettingVm
 
 class SettingMenuViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView) {
@@ -24,6 +25,8 @@ class SettingMenuViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView
             when(position){
                 0 ->{
                     toast(context, "Profile Clicked")
+                    val intent = Intent(context, ProfileActivity::class.java)
+                    context.startActivity(intent)
                 }
                 1 ->{
                     toast(context, "Policies Clicked")

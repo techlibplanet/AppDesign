@@ -36,4 +36,10 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:$android_support_lib_version"
 
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    //anko
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+    implementation "org.jetbrains.anko:anko-support-v4-commons:$anko_version"
 }

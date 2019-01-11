@@ -23,6 +23,7 @@ class SettingsActivity : AppCompatActivity() {
         toolBar = findViewById(R.id.toolbar)
         setSupportActionBar(toolBar)
 
+
         recyclerView = findViewById(R.id.menu_setting_recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
