@@ -43,6 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="First Name"
+                    android:maxLines="1"
                     android:text="" />
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
@@ -58,6 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Last Name"
+                    android:maxLines="1"
                     android:text="" />
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
@@ -73,6 +75,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Mobile Number"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:maxLength="10"
                     android:text="" />
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
@@ -88,6 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
+                    android:maxLines="1"
                     android:text="" />
             </android.support.design.widget.TextInputLayout>
 
@@ -98,7 +104,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/google_button_background"
                 android:gravity="center"
-                android:text="Sign In"
+                android:text="Submit"
                 android:textColor="@color/colorWhite"
                 android:textSize="16sp" />
 

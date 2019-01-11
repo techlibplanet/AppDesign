@@ -22,7 +22,9 @@
         <activity android:name=".PlayActivity" />
         <activity android:name=".AddPoints" />
         <activity android:name=".TransferPoints" />
-        <activity android:name=".WithdrawalPoints"></activity>
+        <activity android:name=".WithdrawalPoints" />
+        <activity android:name=".settings.SettingsActivity" />
+        <activity android:name=".policies.PoliciesActivity"></activity>
     </application>
 
 </manifest>

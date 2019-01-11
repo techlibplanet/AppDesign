@@ -1,5 +1,6 @@
 package appdesign.example.com.appdesign
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,10 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        signInButton.findViewById<Button>(R.id.signInButton)
+        signInButton = findViewById(R.id.signInButton)
 
         signInButton.setOnClickListener{
-
+            val intent = Intent(this, UserInfoActivity::class.java)
+            startActivity(intent)
         }
+
     }
 }
