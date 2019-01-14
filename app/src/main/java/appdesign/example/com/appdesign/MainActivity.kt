@@ -3,11 +3,11 @@ package appdesign.example.com.appdesign
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import com.shobhitpuri.custombuttons.GoogleSignInButton
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var signInButton : Button
+    private lateinit var signInButton : GoogleSignInButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -42,4 +42,6 @@ dependencies {
     //anko
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
     implementation "org.jetbrains.anko:anko-support-v4-commons:$anko_version"
+
+    implementation 'com.shobhitpuri.custombuttons:google-signin:1.0.0'
 }

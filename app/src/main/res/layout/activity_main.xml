@@ -36,30 +36,53 @@
                 android:layout_margin="8dp"
                 android:src="@drawable/app_logo" />
 
-            <ImageView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:src="@drawable/app_name" />
+                style="@style/TitleText"
+                android:text="KwizzApp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_marginBottom="@dimen/space10dp"/>
 
-            <ImageView
+            <TextView
+                style="@style/SmallTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:src="@drawable/app_logo_desc" />
+                android:text="Earn while you learn"
+                android:layout_marginBottom="30dp"/>
 
-            <Button
-                android:textColor="@color/colorWhite"
+            <com.shobhitpuri.custombuttons.GoogleSignInButton
                 android:id="@+id/signInButton"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:background="@drawable/google_button_background"
-                android:drawableLeft="@drawable/google_logo"
-                android:gravity="center"
-                android:paddingStart="8dp"
-                android:paddingEnd="30dp"
-                android:text="Sign In"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/google_sign_up"
+                app:isDarkTheme="true" />
+
+            <!--<Button-->
+                <!--android:drawableTintMode="screen"-->
+                <!--android:paddingStart="8dp"-->
+                <!--android:paddingEnd="30dp"-->
+                <!--android:id="@+id/signInButton"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:drawableLeft="@drawable/google_logo"-->
+                <!--android:text="Sign In"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:background="@drawable/button_background"/>-->
+
+            <!--<Button-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:id="@+id/signInButton"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/button_background"-->
+                <!--android:drawableLeft="@drawable/google_logo"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingStart="8dp"-->
+                <!--android:paddingEnd="30dp"-->
+                <!--android:text="Sign In"/>-->
 
 
 

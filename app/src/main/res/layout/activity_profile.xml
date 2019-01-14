@@ -41,12 +41,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:paddingTop="@dimen/space10dp">
 
-                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/profile_image"
                             android:layout_width="96dp"
                             android:layout_height="96dp"
@@ -61,15 +60,14 @@
                             android:layout_marginTop="@dimen/space10dp"
                             android:padding="@dimen/space10dp"
                             android:text="Mayank Sharma"
-                            android:textColor="@color/colorWhite"
                             android:textStyle="bold" />
 
                         <ImageButton
+                            android:background="@color/colorWhite"
                             android:id="@+id/editProfileImage"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
-                            android:background="@color/colorPrimary"
                             android:padding="@dimen/dimen_10dp"
                             android:src="@drawable/ic_edit" />
                     </LinearLayout>
@@ -87,7 +85,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -104,8 +101,7 @@
                             android:paddingTop="@dimen/space10dp"
                             android:paddingEnd="@dimen/space10dp"
                             android:text="Points Win"
-                            android:textAlignment="center"
-                            android:textColor="@color/colorWhite" />
+                            android:textAlignment="center" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -116,16 +112,16 @@
                             android:paddingBottom="@dimen/space10dp"
                             android:text="2.1 k"
                             android:textAlignment="center"
-                            android:textColor="@color/colorWhite"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGreen"/>
 
                     </LinearLayout>
 
                     <View
                         android:layout_width="1px"
                         android:layout_height="match_parent"
-                        android:background="@color/colorWhite" />
+                        android:background="@color/colorBlack" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -141,8 +137,7 @@
                             android:paddingTop="@dimen/space10dp"
                             android:paddingEnd="@dimen/space10dp"
                             android:text="Points Loose"
-                            android:textAlignment="center"
-                            android:textColor="@color/colorWhite" />
+                            android:textAlignment="center" />
 
                         <TextView
                             style="@style/TitleText"
@@ -154,9 +149,9 @@
                             android:paddingBottom="@dimen/space10dp"
                             android:text="1.1 k"
                             android:textAlignment="center"
-                            android:textColor="@color/colorWhite"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textColor="@color/colorRed"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -172,7 +167,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
                     android:orientation="horizontal"
                     android:padding="@dimen/space5dp">
 
@@ -188,8 +182,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dimen_10dp"
                         android:padding="@dimen/space10dp"
-                        android:text="+91-9993657966"
-                        android:textColor="@color/colorWhite" />
+                        android:text="+91-9993657966" />
 
                 </LinearLayout>
 
@@ -203,7 +196,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
                     android:orientation="horizontal"
                     android:padding="@dimen/space5dp">
 
@@ -219,8 +211,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dimen_10dp"
                         android:padding="@dimen/space10dp"
-                        android:text="mayank84735@gmail.com"
-                        android:textColor="@color/colorWhite" />
+                        android:text="mayank84735@gmail.com" />
 
                 </LinearLayout>
 
@@ -234,13 +225,13 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textColor="@color/colorWhite"
                     style="@style/SmallTitleText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/space10dp"
                     android:layout_weight="1"
-                    android:text="Bank Details"
-                    android:textColor="@color/colorWhite" />
+                    android:text="Bank Details" />
 
                 <ImageView
                     android:id="@+id/editBankDetails"
@@ -250,7 +241,7 @@
                     android:layout_marginEnd="@dimen/space10dp"
                     android:paddingStart="@dimen/space10dp"
                     android:paddingEnd="@dimen/space10dp"
-                    android:src="@drawable/ic_edit" />
+                    android:src="@drawable/ic_edit_white" />
 
             </LinearLayout>
 
@@ -264,7 +255,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
                     android:orientation="horizontal"
                     android:padding="@dimen/space5dp">
 
@@ -280,14 +270,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dimen_10dp"
                         android:padding="@dimen/space10dp"
-                        android:text="32895984735"
-                        android:textColor="@color/colorWhite" />
+                        android:text="32895984735" />
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/space10dp">
@@ -295,7 +285,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
                     android:orientation="horizontal"
                     android:padding="@dimen/space5dp">
 
@@ -311,8 +300,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dimen_10dp"
                         android:padding="@dimen/space10dp"
-                        android:text="SBIN0007726"
-                        android:textColor="@color/colorWhite" />
+                        android:text="SBIN0007726"/>
 
                 </LinearLayout>
 
