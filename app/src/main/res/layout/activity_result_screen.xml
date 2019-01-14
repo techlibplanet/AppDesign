@@ -11,6 +11,8 @@
 
     <include layout="@layout/quiz_result_row"/>
 
+    <include layout="@layout/points_summery_row"/>
+
 
     <!--<android.support.v7.widget.CardView-->
         <!--android:layout_margin="@dimen/space16dp"-->
