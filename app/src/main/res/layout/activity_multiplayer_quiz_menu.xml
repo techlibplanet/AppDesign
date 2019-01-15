@@ -128,6 +128,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/leave_room"
             android:layout_margin="@dimen/space16dp"
             android:layout_gravity="bottom|end"
             android:textColor="@color/colorRed"

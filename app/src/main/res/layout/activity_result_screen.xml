@@ -1,66 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ResultScreen"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:background="@drawable/background">
+    android:layout_height="match_parent">
 
-    <include layout="@layout/quiz_result_row"/>
-
-    <include layout="@layout/points_summery_row"/>
-
-
-    <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_margin="@dimen/space16dp"-->
-        <!--app:cardCornerRadius="@dimen/space5dp"-->
-        <!--android:layout_marginTop="@dimen/space10dp"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content">-->
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="center"-->
-            <!--android:orientation="vertical">-->
-
-            <!--<ImageView-->
-                <!--android:layout_margin="@dimen/space16dp"-->
-                <!--android:layout_width="64dp"-->
-                <!--android:layout_height="64dp"-->
-                <!--android:background="@drawable/circle_background_green"-->
-                <!--android:src="@drawable/ic_done"-->
-                <!--android:padding="@dimen/space8dp"/>-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="Congratulations"-->
-                <!--android:textSize="16sp"/>-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="You've Won"-->
-                <!--android:textSize="14sp"/>-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="773"-->
-                <!--android:textSize="20sp"-->
-                <!--android:textStyle="bold"-->
-                <!--android:layout_marginBottom="@dimen/space10dp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ResultScreen"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background">
 
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space16dp"
+            android:layout_marginTop="@dimen/space10dp"
+            app:cardCornerRadius="@dimen/space5dp">
 
-        <!--</LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="@dimen/space16dp"
+                    android:background="@drawable/circle_background_green"
+                    android:padding="@dimen/space8dp"
+                    android:src="@drawable/ic_done" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Congratulations"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You've Won"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space10dp"
+                    android:text="773"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_5dp"
+            style="@style/TitleText"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz Result"
+            android:textColor="@color/colorWhite"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:scrollbarThumbVertical="@drawable/recycler_scroll_bar"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quiz_result_recycler_view"
+            android:scrollbars="vertical">
+        </android.support.v7.widget.RecyclerView>
 
 
-    <!--</android.support.v7.widget.CardView>-->
 
+    </LinearLayout>
 
-
-</LinearLayout>
+</ScrollView>

@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ResultScreen">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,10 +27,10 @@
         <activity android:name=".WithdrawalPoints" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".policies.PoliciesActivity" />
-        <activity android:name=".profile.ProfileActivity" />
+        <activity android:name=".ResultScreen" />
         <activity android:name=".settings.SettingsActivity" />
         <activity android:name=".MultiplayerQuizMenu" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".profile.ProfileActivity"></activity>
     </application>
 
 </manifest>

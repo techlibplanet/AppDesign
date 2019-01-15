@@ -10,4 +10,5 @@
     <dimen name="space20dp">20dp</dimen>
     <dimen name="space5dp">5dp</dimen>
     <dimen name="space16dp">16dp</dimen>
+    <dimen name="space4dp">4dp</dimen>
 </resources>

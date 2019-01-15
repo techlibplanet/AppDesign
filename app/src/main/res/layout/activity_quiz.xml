@@ -32,6 +32,10 @@
                 android:textColor="@color/colorWhite" />
 
             <android.support.v7.widget.CardView
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/option_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/space16dp"
